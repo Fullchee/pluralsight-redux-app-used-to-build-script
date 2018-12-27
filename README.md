@@ -20,3 +20,23 @@ I've created various branches to show different approaches for building the same
 | sagas | This branch uses Redux Saga instead of Redux thunk. | [This pull request outlines the changes](https://github.com/coryhouse/pluralsight-redux-app-used-to-build-script/pull/12).
 | plain-react | This branch uses plain React instead of Redux. As you can see in the pull request, for an app this size, plain React is preferable.| [This pull request outlines the changes](https://github.com/coryhouse/pluralsight-redux-app-used-to-build-script/pull/10).|
 | context | This branch uses React context to store user data and display it on the course list page. | [This pull request outlines the changes](https://github.com/coryhouse/pluralsight-redux-app-used-to-build-script/pull/11). |
+
+
+## Challenges
+Check the React and Flux Course for some guidance
+
+* Author Administration
+    * logic where you can't delete an author who already has a course
+* Delete course
+* unsaved changes message
+    * if they try to leave the ManageCourseForm with unsaved changes
+* Enhance client-side validation
+* Handle 404s
+    * needs to add logic to mapStateToProps
+* Show the # of courses in the Header
+* Pagination (infinity scrolling)
+* Sort the course table alphabetically
+    * mapStateToProps
+* Revert abandoned changes
+    * if the user abandons the ManageCourseForm without saving but goes back
+

@@ -1,3 +1,4 @@
+//Author: Ryan Florence
 import React, {PropTypes} from 'react';
 
 class LoadingDots extends React.Component {
