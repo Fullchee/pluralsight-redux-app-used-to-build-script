@@ -12,7 +12,7 @@ describe('Header', () => {
     const numLinks = shallow(<Header loading={false} />).find('Link').length;
 
     // assert
-    expect(numLinks).toEqual(2);
+    expect(numLinks).toEqual(3);
   });
 
   // Note how with mount you search for the final
@@ -22,7 +22,7 @@ describe('Header', () => {
     const numAnchors = mount(<Header loading={false} />).find('a').length;
 
     // assert
-    expect(numAnchors).toEqual(3);
+    expect(numAnchors).toEqual(4);
   });
 
   it('contains no links with active class by default', () => {
